@@ -15,7 +15,6 @@ public class WeatherController {
     public WeatherBudObject index() {
         WeatherService service = new WeatherService();
         WeatherBudObject apiResp = service.callCurrentWeather();
-        System.out.println(apiResp);
         return apiResp;
     }
 
